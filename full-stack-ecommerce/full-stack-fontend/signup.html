@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/register.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <p>Summer Sale For All And Free Express Delivery - OFF 50%! Shop now</p>
+        </div>
+        <div class="bottom-header">
+            <div class="sub-header">
+                <div class="nav-bar">
+                    <div class="logo">
+                        <h3>E-commerce</h3>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="#">Sign up</a></li>
+                            <button>Shop</button>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <button>Log in</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="sub-main">
+            <div class="page-image">
+                <img src="./image/photo-1572584642822-6f8de0243c93.avif" alt="">
+            </div>
+            <div class="register-form">
+                <form onsubmit="onUserSubmit(event)">
+                    <h3>Create an Account</h3>
+                    <label>Name</label> <br>
+                    <input type="text" id="user-name"> <br>
+            
+                    <label>Surname</label> <br>
+                    <input type="text" id="user-surname"> <br>
+
+                    <label>Email</label> <br>
+                    <input type="text" id="user-email"> <br>
+            
+                    <label>Username</label> <br>
+                    <input type="text" id="user-username"> <br>
+            
+                    <label>Password</label> <br>
+                    <input type="password" id="user-password"> <br>
+            
+                    <input class="btn" type="submit" value="Yadda saxla"> <br>
+                    <span>Already have Account? <a href="login.html">Log in</a></span>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="sub-footer">
+            <div class="detail">
+                <h4>Exclusive</h4>
+                <p class="subscribe">Subscribe</p>
+                <p class="exclusive">Get 10% off your first order</p>
+                <input type="text"  placeholder="Enter your email" >
+            </div>
+            <div class="detail">
+                <h4>Support</h4>
+                <ul>
+                    <li>111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.</li>
+                    <li>exclusive@gmail.com</li>
+                    <li>+88015-88888-9999</li>
+                </ul>
+            </div>
+            <div class="detail">
+                <h4>Account</h4>
+                <ul>
+                    <li>My Account</li>
+                    <li>Login / Register</li>
+                    <li>Cart</li>
+                    <li>Wishlist</li>
+                    <li>Shop</li>
+                </ul>
+            </div>
+            <div class="detail">
+                <h4>Quick Link</h4>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Terms Of Use</li>
+                    <li>FAQ</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/signup.js"></script>
+</body>
+</html>

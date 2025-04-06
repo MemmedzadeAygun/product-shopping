@@ -30,3 +30,11 @@ const userProductSaleBtn=document.querySelector('.sub-main button');
 userProductSaleBtn.addEventListener('click',()=>{
     window.location.href="userProducts.html";
 })
+
+document.getElementById('shop').addEventListener('click',()=>{
+    window.location.href="shop.html";
+})
+
+document.querySelector('.card-shopping').addEventListener('click',() => {
+    window.location.href = "cart.html";
+})

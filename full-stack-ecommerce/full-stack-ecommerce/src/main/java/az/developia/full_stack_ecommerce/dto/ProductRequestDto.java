@@ -45,6 +45,6 @@ public class ProductRequestDto {
 	@Column(columnDefinition = "TEXT")
 	private String imgUrl;
 	
-	private Integer customerId;
+	private Integer userId;
 }
 

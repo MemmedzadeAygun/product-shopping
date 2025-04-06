@@ -52,3 +52,11 @@ let profileImg=document.querySelector('.profile img');
 profileImg.addEventListener('click',()=>{
     window.location.href="profile.html";
 })
+
+document.querySelector('.card-shopping').addEventListener('click',() => {
+    window.location.href = "cart.html";
+})
+
+document.getElementById('shop').addEventListener('click',()=>{
+    window.location.href="shop.html";
+})

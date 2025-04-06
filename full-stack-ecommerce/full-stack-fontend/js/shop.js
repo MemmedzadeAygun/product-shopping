@@ -174,3 +174,36 @@ function searchProducts() {
 }
 
 searchProducts();
+
+document.addEventListener('click', (e) => {
+    // if (e.target.closest('button')) return;
+
+    if (e.target.closest('.product')) {
+        const productId = e.target.closest('.product').getAttribute('data-id');
+        console.log(productId);
+        window.location.href = `product.html?id=${productId}`;
+    }
+});
+
+document.querySelector('.card-shopping').addEventListener('click',() => {
+    window.location.href = "cart.html";
+})
+
+function addToCart(productId){
+
+    const cart={
+        productId:productId
+    }
+
+    fetch(`http://localhost:8085/cart/add`,{
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            "Authorization": `Bearer ${token}`
+        },
+        body: JSON.stringify(cart)
+    })
+    .then(data => {
+        alert("Product add to cart successfully");
+    })
+}

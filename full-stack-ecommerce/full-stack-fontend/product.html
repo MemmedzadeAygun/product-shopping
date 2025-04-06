@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/login.css">
-    <title>Login</title>
+        <link rel="stylesheet" href="./css/product.css">
+    <title>Product</title>
 </head>
-
 <body>
     <header>
         <div class="top-header">
@@ -20,42 +18,68 @@
             <div class="sub-header">
                 <div class="nav-bar">
                     <div class="logo">
-                        <h3>E-commerce</h3>
+                        <h5>E-commerce</h5>
                     </div>
                     <nav>
                         <ul>
-                            <li><a href="#">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="./contact.html">Contact</a></li>
                             <li><a href="./about.html">About</a></li>
                             <li><a href="signup.html">Sign up</a></li>
-                            <button>Shop</button>
+                            <button id="shop">Shop</button>
                         </ul>
                     </nav>
                 </div>
                 <div class="search-bar">
                     <input type="text" placeholder="Search">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <button>Log in</button>
+                    <div class="card-shopping">
+                        <img src="./image/shopping-cart.png" alt="">
+                    </div>
+                    <div class="profile">
+                        <img src="./image/istockphoto-1300845620-612x612.jpg" alt="">
+                        <p id="user_name">user</p>
+                    </div>
+                    <button id="logout-btn">Log out</button>
                 </div>
             </div>
         </div>
     </header>
     <main>
         <div class="sub-main">
-            <div class="page-image">
-                <img src="./image/product-package-boxes-shopping-bag-cart-with-laptop-online-shopping-delivery-concept_38716-138.avif" alt="">
+            <div class="left-side">
+                <p>Product page</p>
+                <div class="product-image">
+                    <img src="" alt="">
+                </div>
             </div>
-            <div class="register-form">
-                <form onsubmit="onLogin(event)">
-                    <h3>Log in</h3>
-                    <label for="username">Username</label> <br>
-                    <input type="text" id="username" autocomplete="off"> <br>
-
-                    <label for="password">Password</label> <br>
-                    <input type="password" id="password" autocomplete="off"> <br>
-                    <input class="btn" type="submit" value="Sign In">
-                    <span>Already have Account? <a href="signup.html">Sign up</a></span>
-                </form>
+            <div class="right-side">
+                <h2></h2>
+                <p id="rating"></p>
+                <p id="price"></p>
+                <p id="brand"></p>
+                <hr class="custom-hr">
+                <button id="add-to-cart">Add to Cart</button>
+                <div class="boxes">
+                    <div class="box">
+                        <div class="icon">
+                            <img src="./image/3d-cube.png" alt="">
+                        </div>
+                        <div class="detail">
+                            <h3>Free Delivery</h3>
+                            <p><a href="#">Enter your postal code for delivery Availability</a></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <img src="./image/refresh.png" alt="">
+                        </div>
+                        <div class="detail">
+                            <h3>Return Delivery</h3>
+                            <p><a href="#">free 30 Days Delivery Returns.Details</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -97,7 +121,7 @@
         </div>
     </footer>
 
-    <script src="./js/login.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/product.js"></script>
 </body>
-
 </html>

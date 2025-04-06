@@ -113,3 +113,7 @@ function updateProduct(productId, product) {
 document.getElementById('shop').addEventListener('click',()=>{
     window.location.href="shop.html";
 })
+
+document.querySelector('.card-shopping').addEventListener('click',() => {
+    window.location.href = "cart.html";
+})

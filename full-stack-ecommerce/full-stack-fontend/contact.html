@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/login.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="./css/contact.css">
+    <title>Contact</title>
 </head>
-
 <body>
     <header>
         <div class="top-header">
@@ -20,42 +18,71 @@
             <div class="sub-header">
                 <div class="nav-bar">
                     <div class="logo">
-                        <h3>E-commerce</h3>
+                        <h5>E-commerce</h5>
                     </div>
                     <nav>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Contact</a></li>
                             <li><a href="./about.html">About</a></li>
                             <li><a href="signup.html">Sign up</a></li>
-                            <button>Shop</button>
+                            <button id="shop">Shop</button>
                         </ul>
                     </nav>
                 </div>
                 <div class="search-bar">
                     <input type="text" placeholder="Search">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <button>Log in</button>
+                    <div class="card-shopping">
+                        <img src="./image/shopping-cart.png" alt="">
+                    </div>
+                    <div class="profile">
+                        <img src="./image/istockphoto-1300845620-612x612.jpg" alt="">
+                        <p id="user_name">user</p>
+                    </div>
+                    <button id="logout-btn">Log out</button>
                 </div>
             </div>
         </div>
     </header>
     <main>
         <div class="sub-main">
-            <div class="page-image">
-                <img src="./image/product-package-boxes-shopping-bag-cart-with-laptop-online-shopping-delivery-concept_38716-138.avif" alt="">
+            <div class="left-side">
+                <div class="sub-left-side">
+                    <div class="call-to-us">
+                        <div class="icon">
+                            <img src="./image/Vector.svg" alt="">
+                        </div>
+                        <p>Call To Us</p>
+                    </div>
+                    <p>We are available 24/7, 7 days a week.</p>
+                    <p>Phone: +8801611112222</p>
+                    <hr>
+                    <div class="write-to-us">
+                        <div class="icon">
+                            <img src="./image/Vector (1).svg" alt="">
+                        </div>
+                        <p>Write To Us</p>
+                    </div>
+                    <p>Fill out our form and we will contact you within 24 hours.</p>
+                    <p>Emails: customer@exclusive.com</p>
+                    <p>Emails: support@exclusive.com</p>
+                </div>
             </div>
-            <div class="register-form">
-                <form onsubmit="onLogin(event)">
-                    <h3>Log in</h3>
-                    <label for="username">Username</label> <br>
-                    <input type="text" id="username" autocomplete="off"> <br>
-
-                    <label for="password">Password</label> <br>
-                    <input type="password" id="password" autocomplete="off"> <br>
-                    <input class="btn" type="submit" value="Sign In">
-                    <span>Already have Account? <a href="signup.html">Sign up</a></span>
-                </form>
+            <div class="right-side">
+                <div class="sub-right-side">
+                    <form action="">
+                        <div class="contact">
+                            <input type="text" placeholder="Your Name*" id="name" autocomplete="off">
+                            <input type="email" placeholder="Your Email*" id="email" autocomplete="off">
+                            <input type="text" placeholder="Your Phone*" id="phone" autocomplete="off">
+                        </div>
+                        <textarea name="" id="message" placeholder="Your Message"></textarea>
+                    </form>
+                    <div class="send">
+                        <button id="send">Send Message</button>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -97,7 +124,7 @@
         </div>
     </footer>
 
-    <script src="./js/login.js"></script>
+    <script src="./js/contact.js"></script>
+    <script src="./js/script.js"></script>
 </body>
-
 </html>

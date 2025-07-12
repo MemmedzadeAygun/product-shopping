@@ -1,0 +1,7 @@
+# Java faylları backend-də yerləşir – əsas dil kimi qəbul olunsun
+/full-stack-ecommerced/**/*.java linguist-detectable=true
+
+# Frontend-dəki HTML, CSS, JS faylları əsas dil seçimindən çıxarılsın
+/full-stack-frontend/**/*.html linguist-detectable=false
+/full-stack-frontend/**/*.css linguist-detectable=false
+/full-stack-frontend/**/*.js linguist-detectable=false
